@@ -76,7 +76,7 @@ def qual_log_calculation(request):
         df.head()
         # fig = px.line(df, x = 'timestamp', y = 'DL_AvgPHY_THPT_KBPS', title='QXDM BLER - Throughput Plot')
         chart_ply = get_line(df,'QXDM BLER - Throughput Plot','DL_AvgPHY_THPT_KBPS','timestamp')
-        chart = chart_ply.to_html(full_html=False, default_height=500, default_width=700)
+        chart = chart_ply.to_html(full_html=False, default_height='100%', default_width='100%')
         # chart = chart_ply.to_image(format='png')
         # print(chart)
         return render(request,"Qual_Log_Parsing_Pages/qual_log_homepage.html",{'charts':chart})
