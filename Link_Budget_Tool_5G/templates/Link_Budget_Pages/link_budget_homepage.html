@@ -1,0 +1,68 @@
+{% extends "All_Tools_Pages/headerfooter.html" %}
+
+
+{% block content %}
+
+{% load static %}
+
+<form role="form" method="POST" action="{% url 'link_budget' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="card-body container">
+                
+        <div class="form-group">
+            <label for="gtranspow"> Enter the gNodeB transmit power (dBm)</label>
+            <input class="form-control" id="gtranspow" placeholder="Enter gtranspow" name ="gtranspow"><br>
+        </div>
+        <div class="form-group">
+            <label for="subcarrierqty"> Enter the subcarrier quantity</label>
+            <input class="form-control" id="subcarrierqty" placeholder="Enter subcarrierqty" name ="subcarrierqty"><br>
+        </div>
+        <div class="form-group">
+            <label for="gantgain"> Enter the gNodeB antenna gain (dBi)</label>
+            <input class="form-control" id="gantgain" placeholder="Enter gantgain" name ="gantgain"><br>
+        </div>
+        <div class="form-group">
+            <label for="gcableloss"> Enter the gNodeB cable loss (dB)</label>
+            <input class="form-control" id="gcableloss" placeholder="Enter gcableloss" name ="gcableloss"><br>
+        </div>
+        <div class="form-group">
+            <label for="pathloss"> Enter the Path loss(dB) </label>
+            <input class="form-control" id="pathloss" placeholder="Enter pathloss" name ="pathloss"><br>
+        </div>
+        <div class="form-group">
+            <label for="penetloss"> Enter the Penetration loss(dB)</label>
+            <input class="form-control" id="penetloss" placeholder="Enter penetloss" name ="penetloss"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="foliageloss"> Enter the foliage loss (dB)</label>
+            <input class="form-control" id="foliageloss" placeholder="Enter foliageloss" name ="foliageloss"><br>
+        </div>
+        <div class="form-group">
+            <label for="bodybockloss"> Enter the body block loss (dB)</label>
+            <input class="form-control" id="bodybockloss" placeholder="Enter bodybockloss" name ="bodybockloss"><br>
+        </div>
+        <div class="form-group">
+            <label for="interfermargin"> Enter the interference margin (dB))</label>
+            <input class="form-control" id="interfermargin" placeholder="Enter interfermargin" name ="interfermargin"><br>
+        </div>
+        <div class="form-group">
+            <label for="rainicemargin"> Enter the rain/ice margin (dB)</label>
+            <input class="form-control" id="rainicemargin" placeholder="Enter rainicemargin" name ="rainicemargin"><br>
+        </div>
+        <div class="form-group">
+            <label for="slowfadingmargin"> Enter the Slow Fading margin (dB)</label>
+            <input class="form-control" id="slowfadingmargin" placeholder="Enter slowfadingmargin" name ="slowfadingmargin"><br>
+        </div>
+        <div class="form-group">
+            <label for="ueantgain"> EnterUE antenna gain (dB)</label>
+            <input class="form-control" id="ueantgain" placeholder="Enter ueantgain" name ="scs"><br>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary" >Calculate</button>
+        </div>
+
+    </div>
+</form>
+{% endblock %}
