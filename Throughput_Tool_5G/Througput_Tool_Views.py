@@ -100,5 +100,7 @@ def throughput_calculation(request):
                     'value': 1800}}))
 
         fig.update_layout(paper_bgcolor = "lavender", font = {'color': "darkblue", 'family': "Arial"})
-
-        fig.show()
+        chart =fig.to_html(full_html=False, default_height='100%', default_width='100%')
+        print(chart)
+        # fig.show()
+        return render(request, 'Throughput_Tool_Pages/throughput_homepage.html',{'charts':chart})

@@ -59,7 +59,14 @@
     </div>
 </form>
 
+<div class="container">
+{% if charts %}
+{% autoescape off %}
+    {{charts|safe}}
+{% endautoescape %}
 
+{% endif%}
 
+</div>
 {% endblock %}
 
