@@ -44,21 +44,33 @@
     <!-- <img  src=" {% static "admin/img/image72.jpg" %}"> -->
     
 
-    <div class="row" style="margin-top:50px; margin-left:10px; margin-right:10px;">
-        <div class="col-sm-3 col-12" style="height:50%;">   
-            <div class="row" style="height:50%; padding:10%">
-                <a href="/throughput_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-                    NR Throughput APP: <p class="text-center fs-6">Graphical view for Throughput and Throughput dip due to BLER%</p></a>
-            </div>
+    <div class="row justify-content-center text-center" style="margin-top:50px; margin-left:10px; margin-right:10px; ">
+        <div class="col-sm-6">
+        <h1 style="color:#c1264c"> DU Health Monitor</h1>
+    </div>
+        <div class="col-sm-6">
+        <h1 style="color:#c1264c"> DU Capability Applications</h1>
+    </div>
+        <div class="col-sm-3 col-12 text-center" style="height:50%;border:3px solid #c1264c;border-radius:10px 0 0 0px ;border-right:0px;border-bottom:0px;">   
+            
+            
+
+            <div class="row" style="height:50%;padding:10% ">
+                <a href="/ptp_timing_delay_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
+                    IEEE_1588 PTP Timing analysis APP <p class="text-center fs-6"> CSV output and Graphical View of masterOffset, status, and PathDelay(ns) of linuxptp package include the ptp4l and phc2sys.</p>
+                </a>
+            </div> 
+
             <div class="row" style="height:50%; padding:10%">
                 <a href="/re_mapping_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
                     NR PRB Occupancy APP  <p class="text-center fs-6"> Content of each 5G resource block (PRB) per frame/subframe & slot level. Graphical view of all kinds of Constellation.
                     </p>
                  </a>
             </div>
+
         </div>
         
-        <div class="col-sm-3 col-12" style="height:50%;">
+        <div class="col-sm-3 col-12" style="height:50%;border:3px solid #c1264c;border-radius:0 10px 0px 0;;border-left:0px;border-bottom:0px;">
             <div class="row" style="height:50%;padding:10%">
                 <a href="/du_log_parser_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
                     NR Dashboard APP <p class="text-center fs-6"> Graphical view for all KPI information, Dashboard can help with interpreting & presenting data.</p>
@@ -71,19 +83,21 @@
 
             </div>
         </div>
-        <div class="col-sm-3 col-12" style="height:50%;">
-            <div class="row" style="height:50%;padding:10% ">
-                <a href="/ptp_timing_delay_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-                    IEEE_1588 PTP Timing analysis APP <p class="text-center fs-6"> CSV output and Graphical View of masterOffset, status, and PathDelay(ns) of linuxptp package include the ptp4l and phc2sys.</p>
+        <div class="col-sm-3 col-12" style="height:50%;border:3px solid #c1264c;border-radius:10px 0 0 0px ;border-right:0px;border-bottom:0px;">
+            
+            <div class="row" style="height:50%;padding:10%; ">
+                <a href="/nr_arfcn_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
+                    NR Frequencies APP <p class="text-center fs-6">Frequency information, positions of DL/UL carriers BW in the band, Checks & Graphical view for all channel positions.</p>
                 </a>
             </div>
+
             <div class="row" style="height:50%;padding:10%">
                 <a href="/ota_algo_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
                     NR Algorithm tuning APP <p class="text-center fs-6"> Graphical analysis of various internal 5G DU parameters for eg, (DLLA, ULLA, CLPC, OLLA, ILLA, etc)</p>
                 </a>
             </div>
         </div>
-        <div class="col-sm-3 col-12" style="height:50%;">
+        <div class="col-sm-3 col-12" style="height:50%; border:3px solid #c1264c;border-radius:0 10px 0px 0;;border-left:0px;border-bottom:0px;">
             <div class="row" style="height:50%;padding:10%">
                 <a href="/link_budget_tool" class="btn btn-outline-success btn-lg fs-4 text-center " role="button" aria-disabled="true">
                     NR LinkBudget APP <p class="text-center fs-6">  Estimate the maximum allowed path loss (MAPL) on radio path from transmit antenna to receive antenna and Graphical representation
@@ -91,22 +105,26 @@
                     </p>
                 </a>
             </div>
-            <div class="row" style="height:50%;padding:10%">
-                <a href="/nr_arfcn_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
-                    NR Frequencies APP <p class="text-center fs-6">Frequency information, positions of DL/UL carriers BW in the band, Checks & Graphical view for all channel positions.</p>
-                </a>
+            
+            <div class="row" style="height:50%; padding:10%">
+                <a href="/throughput_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
+                    NR Throughput APP: <p class="text-center fs-6">Graphical view for Throughput and Throughput dip due to BLER%</p></a>
             </div>
+
+           
+
+
         </div>
 
     </div>
-    <div class="row text-center">
-        <div class=" col-sm-6 col-12 ">
-            <a href="/odu_cpu_utilization_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
+    <div class="row text-center " style="margin-right:10px;margin-left:10px;border-top:0px;border-radius:0 0 10px 10px;border-bottom:0px;">
+        <div class=" col-sm-6 col-12 " style="border-right:3px solid #c1264c;border-radius:0 0 10px 10px;border-bottom:3px solid #c1264c; border-left:3px #c1264c solid;" >
+            <a href="/odu_cpu_utilization_tool" class="btn btn-outline-success btn-lg fs-4 text-center"  role="button" aria-disabled="true">
                 NR DU CPU utilization APP <p class="text-center fs-6">CSV and the graphical result of CPU utilization and Process id of any DU Hardware.                </p>
                </a>
         </div>
-        <div class=" col-sm-6 col-12">
-             <a href="/global_result_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
+        <div class=" col-sm-6 col-12" style="border-left:3px solid #c1264c; border-radius: 0 0 10px 10px;border-bottom:3px solid #c1264c; border-right:3px #c1264c solid;">
+            <a href="/global_result_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
                 NR Global Data Repositiory<p class="text-center fs-6">A graphical view of Radisys DU Result from various customer or Radisys LAB nodes.</p>
            </a>
         </div>
