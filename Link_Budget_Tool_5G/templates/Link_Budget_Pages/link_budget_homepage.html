@@ -8,6 +8,8 @@
 <form role="form" method="POST" action="{% url 'link_budget' %}" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="card-body container">
+    
+    <h1 class="fs-1 text-center fw-bold text-danger">NR Global Data Repositiory</h1>
                 
         <div class="form-group">
             <label for="gtranspow"> Enter the gNodeB transmit power (dBm)</label>
