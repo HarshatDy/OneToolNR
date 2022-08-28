@@ -19,7 +19,7 @@
 
     .btn{
         overflow:hidden;
-        height:150px;
+        height:180px;
         /* padding:50px; */
         position: relative;
 
@@ -48,11 +48,12 @@
         <div class="col-sm-3 col-12" style="height:50%;">   
             <div class="row" style="height:50%; padding:10%">
                 <a href="/throughput_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-                     Throughput Estimation Tool (includeing BLER) <p class="text-center fs-6">Calculates Througput for the log file</p></a>
+                    NR Throughput APP: <p class="text-center fs-6">Graphical view for Throughput and Throughput dip due to BLER%</p></a>
             </div>
             <div class="row" style="height:50%; padding:10%">
                 <a href="/re_mapping_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
-                    RE Mapping (PRB Occupany) <p class="text-center fs-6">This tool looks like a grid to determine what is the content of each 5G RB per Frame & Slot</p>
+                    NR Frequencies APP <p class="text-center fs-6">Frequency information, positions of DL/UL carriers BW in the band, Checks & Graphical view for all channel positions.
+                    </p>
                  </a>
             </div>
         </div>
@@ -60,12 +61,12 @@
         <div class="col-sm-3 col-12" style="height:50%;">
             <div class="row" style="height:50%;padding:10%">
                 <a href="/du_log_parser_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-                    DU Log Dashboard <p class="text-center fs-6">Convert your DU log into interactive graph</p>
+                    NR Dashboard APP <p class="text-center fs-6"> Graphical view for all KPI information, Dashboard can help with interpreting & presenting data.</p>
                 </a>
             </div>
             <div class="row" style="height:50%;padding:10%">
                 <a href="/qual_log_parsing_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
-                Qualcomm Log Analytical Tool <p class="text-center fs-6">Plot a graph from Qualcomm UE Logs</p>
+                    Qualcomm UE KPI Presentation APP<p class="text-center fs-6">Graphical View of 5G wireless KPI from Qualcomm UE logs, (eg, Tput, SINR, MCS, QAM etc)</p>
                 </a>
 
             </div>
@@ -73,24 +74,26 @@
         <div class="col-sm-3 col-12" style="height:50%;">
             <div class="row" style="height:50%;padding:10% ">
                 <a href="/ptp_timing_delay_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-                PTP (IEEE 1588 Logs Analysis) <p class="text-center fs-6"> Calculate the PTP Timing delay using phc2sys_log.log and ptp41_log.log file</p>
+                    IEEE_1588 PTP Timing analysis APP <p class="text-center fs-6"> CSV output and Graphical View of masterOffset, status, and PathDelay(ns) of linuxptp package include the ptp4l and phc2sys.</p>
                 </a>
             </div>
             <div class="row" style="height:50%;padding:10%">
                 <a href="/ota_algo_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
-                OTA Algorithm Tool <p class="text-center fs-6">Link Adaption methonds in 5G</p>
+                    NR Algorithm tunning APP <p class="text-center fs-6"> Graphical analysis of various internal 5G DU parameters for eg, (DLLA, ULLA, CLPC, OLLA, ILLA, etc)</p>
                 </a>
             </div>
         </div>
         <div class="col-sm-3 col-12" style="height:50%;">
             <div class="row" style="height:50%;padding:10%">
                 <a href="/link_budget_tool" class="btn btn-outline-success btn-lg fs-4 text-center " role="button" aria-disabled="true">
-                 5G Budget Link Tool <p class="text-center fs-6"> Transmitter and Reciever end parameters for the link budget for DL and UL</p>
+                    NR LinkBudget APP <p class="text-center fs-6">  Estimate the maximum allowed path loss (MAPL) on radio path from transmit antenna to receive antenna and Graphical representation
+                    of Radio Channel Status, Link Budget(dBm), Reception sensitivity(dBm) and Full Path loss(dB)
+                    </p>
                 </a>
             </div>
             <div class="row" style="height:50%;padding:10%">
                 <a href="/nr_arfcn_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true"> 
-                    NR-ARFCN-GSCN Calculator <p class="text-center fs-6">Description for tool 7</p>
+                    NR PRB Occupancy APP <p class="text-center fs-6">Content of each 5G resource block (PRB) per frame/subframe & slot level. Graphical view of all kinds of Constellation.</p>
                 </a>
             </div>
         </div>
@@ -99,12 +102,12 @@
     <div class="row text-center">
         <div class=" col-sm-6 col-12 ">
             <a href="/odu_cpu_utilization_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-                Radisys ODU CPU Utilization Analysis <p class="text-center fs-6">Description for tool 6</p>
+                NR DU CPU utilization APP <p class="text-center fs-6">CSV and the graphical result of CPU utilization and Process id of any DU Hardware.                </p>
                </a>
         </div>
         <div class=" col-sm-6 col-12">
              <a href="/global_result_tool" class="btn btn-outline-success btn-lg fs-4 text-center" role="button" aria-disabled="true">
-            Global Result for ODU Product <p class="text-center fs-6">Description for tool 6</p>
+                NR Global Data Repositiory<p class="text-center fs-6">A graphical view of Radisys DU Result from various customer or Radisys LAB nodes.</p>
            </a>
         </div>
     </div>
