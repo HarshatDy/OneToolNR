@@ -6,8 +6,8 @@
 {% load static %}
 
 <div class="container">
-    <h1 class="fs-1 text-center fw-bold text-danger">NR DU CPU utilization APP</h1>
-
+    <h1 class="fs-1 text-center fw-bold text-danger" style="margin-top:100px;">NR DU CPU utilization APP</h1>
+    <hr>
     <form class="form text-center" role="form" method="POST" action="{% url 'odu_cpu_utilization' %}" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="card-body text-center">
