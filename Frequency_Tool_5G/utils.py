@@ -19,7 +19,7 @@ def get_graph():
 def get_plot(x,y,title,namex,namey):
     plt.switch_backend('AGG')
     plt.figure(figsize=(10,5))
-    plt.title("Graphed")
+    plt.title(title)
     plt.plot(x,y)
     plt.xticks(rotation=45)
     plt.xlabel(namex)

@@ -21,11 +21,13 @@
         <button type="submit" class="btn btn-primary text-center">Calculate</button>
     </form>
 </div>
+<div class="container">
 {% if charts %}
     {% for chart in charts %}
-    <img src="data:image/png;base64, {{chart|safe}}">
+    <img style="width:100%;" src="data:image/png;base64, {{chart|safe}}"><br>
     {% endfor %}
 {% endif%}
+</div>
 
 {% endblock %}
 
