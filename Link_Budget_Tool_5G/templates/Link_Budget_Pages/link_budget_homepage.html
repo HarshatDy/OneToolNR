@@ -84,12 +84,13 @@
 
     </div>
 </form>
-
+<div class="container" width="100%">
 {% if charts %}
     
     <img src="data:image/png;base64, {{charts|safe}}">
   
 {% endif%}
+</div>
 
 
 {% endblock %}
