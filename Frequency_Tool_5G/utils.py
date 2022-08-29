@@ -55,12 +55,11 @@ def get_single_plot(x,title,namex):
     plt.title(title)
     plt.plot(x)
     # px.plo`t(x)
-    graph =plt.xticks(rotation=45)
+    plt.xticks(rotation=45)
     plt.xlabel(namex)
     plt.tight_layout()
-    # graph = get_graph()
+    graph = get_graph()
     return graph
-
 
 def get_scatter(x,y,title):
     plt.switch_backend('AGG')
