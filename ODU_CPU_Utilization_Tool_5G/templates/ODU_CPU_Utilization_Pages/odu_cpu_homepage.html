@@ -20,12 +20,12 @@
     </form>
 </div>
 
-
+<div class="container" style="width:100%">
 {% if charts %}
     {% autoescape off %}
             {{charts|safe}}
     {% endautoescape %}
 {% endif%}
-
+</div>
 
 {% endblock %}
