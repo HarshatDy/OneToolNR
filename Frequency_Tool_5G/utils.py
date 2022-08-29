@@ -22,10 +22,31 @@ def get_plot(x,y,title,namex,namey):
     plt.title(title)
     plt.plot(x,y)
     plt.xticks(rotation=45)
+    plt.legend()
     plt.xlabel(namex)
     plt.ylabel(namey) 
     plt.tight_layout()
     graph = get_graph()
+    return graph
+
+def get_bar(x,y,namex,namey,title,color,edgecolor):
+    plt.switch_backend('AGG')
+    plt.figure(figsize=(10,5))
+    plt.title(title)
+    # plt.plot(x,y)
+    plt.bar(x,y,color=color,edgecolor=edgecolor)
+    plt.xticks(rotation=45)
+    plt.legend()
+    # plt.show()
+    # tmpfile = BytesIO()
+    # fig.savefig(tmpfile, format='png')
+    # encoded = base64.b64encode(tmpfile.getvalue()).decode('utf-8')
+    plt.xlabel(namex)
+    plt.ylabel(namey) 
+    plt.tight_layout()
+    graph = get_graph()
+    # graph =1
+    print(graph)
     return graph
 
 def get_single_plot(x,title,namex):
@@ -33,10 +54,11 @@ def get_single_plot(x,title,namex):
     plt.figure(figsize=(10,5))
     plt.title(title)
     plt.plot(x)
-    plt.xticks(rotation=45)
+    # px.plo`t(x)
+    graph =plt.xticks(rotation=45)
     plt.xlabel(namex)
     plt.tight_layout()
-    graph = get_graph()
+    # graph = get_graph()
     return graph
 
 
@@ -82,6 +104,7 @@ def get_patch(ax,ssb_plot,sss_plot):
     ax.add_patch(sss_plot)
     plt.plot()
     plt.tight_layout()
+    # plt.show()
     graph=get_graph()
     return graph
 
@@ -91,7 +114,7 @@ def only_plot(df):
     # plt.figure(figsize=(10,5))
     # px.rcParams["figure.figsize"] = [7.00, 3.50]
     # plt.rcParams["figure.autolayout"] = True
-    graph = px.line(df,x="P", y="%CPU", title="trial")
+    graph = px.line(df,x="%CPU", y="P", title="trial")
     # plt.show()
     print("printed")
     # plt.tight_layout()
