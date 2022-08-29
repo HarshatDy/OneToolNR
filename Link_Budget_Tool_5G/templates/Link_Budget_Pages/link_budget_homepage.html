@@ -4,7 +4,8 @@
 {% block content %}
 
 {% load static %}
-
+<h1 class="fs-1 text-center fw-bold text-danger" style="margin-top:50px;">NR Link Budget APP</h1>
+    <hr>
 <form role="form" method="POST" action="{% url 'link_budget' %}" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="card-body container">
